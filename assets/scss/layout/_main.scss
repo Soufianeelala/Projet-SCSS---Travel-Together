@@ -1,11 +1,14 @@
-@use "../abstract/variable" as bttn;
+main{
+    background-color: #fffcfc;
+}
 .article_1{
-    background-color: rgb(234, 115, 71);
+    background-color: rgb(244, 150, 116);
     margin-left: 12%;
     margin-right: 12%;
-    margin-top: 3%;
+    margin-top: 1%;
     height: 350px;
     display: flex;
+    border-radius: 15px;
    
     .lorem{ 
         display: flex;
@@ -14,6 +17,7 @@
                 padding-top: 5%;
                 padding-left: 5%;
                 width:46.52%;
+                
             }
             p{  color: rgb(246, 246, 246);
                 padding: 5%;
@@ -25,10 +29,200 @@
     }
     img{ 
         object-fit: cover;
-        height:250px ;
+        height:340px ;
+        margin-top: 25%;
+        margin-right: 105px;  
     }
     a{ 
         padding-left: 5%;
     }              
 }
- 
+.a_article_1 {
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
+    padding: 5px 9px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    transition: 0.25s ease;
+    display: block;
+    width: 20%;
+    margin-left: 5%;
+}
+.service{
+    text-align: center;
+    margin-top: 10%;
+    position: relative;
+    h2{
+        margin: 5%;
+        position: absolute;
+      top: -40%;
+     left: 10%;
+     font-size: 28px;
+    }
+}
+.service_images{
+    display: flex;
+    justify-content: center;
+
+        p{ 
+            padding: 0%;
+        }
+        a{ 
+            color: black;
+        }
+        .service_image1{
+            background-image: url(../img/homme-assis-batiment.jpg);
+            background-size: cover;
+            background-position: center;    
+            height: 350px;
+            width: 500px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 1px black;
+        }
+        .service_image2{
+            background-image: url(../img/passport.jpg);
+            background-size: cover;
+            background-position: center;    
+            height: 169px;
+            width: 500px;
+            margin-left:3% ;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 1px black;
+        }
+        .service_image3{
+            background-image: url(../img/montgolfiere.jpg);
+            background-size: cover;
+            background-position: center;    
+            height: 169px;
+            width: 500px;
+            margin: 3%;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 1px black;
+        }
+}
+////////////////parti_____ Features
+.features{
+    text-align: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    h2{
+        position: absolute;
+        top: -60%;
+        right: 16%;
+        font-size: 28px;
+    }
+    .parti_features{
+        display: flex;
+        justify-content: center;
+       
+        text-align: center;
+        margin: 5%;
+        p{
+            font-size: x-small;
+            text-align: center;
+            margin-top: 5%;
+           
+        }
+
+        .badge{
+            width:20% ;
+        }
+        .transpore{
+            width:20% ;
+            margin-left:5% ;
+            margin-right:5% ;
+        }
+        .maison{
+            width:20% ;
+        }
+
+    }
+}
+//______________________ article2
+.article_2{
+    background-color: rgb(244, 150, 116);
+    margin-left: 19%;
+    margin-right: 12%;
+    margin-top: 0%;
+    height: 220px;
+    width: 60%;
+    display: flex;
+    border-radius: 15px;
+   
+    .lorem2{ 
+        display: flex;
+        justify-content: space-evenly;
+            h2{ color: rgb(246, 246, 246);
+                padding-top: 8%;
+                padding-left: 4%;
+                width:46.52%;
+                
+            }
+            p{  color: rgb(246, 246, 246);
+                padding-left: 4%;
+                width:66.52%;
+                
+            
+            }
+            .p_article_2{
+                display: flex;
+            }
+            .a_article_2 {
+                background-color: #fefefe;
+                color: rgb(0, 0, 0);
+                padding: 5px 9px;
+                border: 1px solid #000000;
+                border-radius: 3px;
+                transition: 0.25s ease;
+                display: block;
+                width: 19%;
+                height: 10%;
+                margin-right: 15%;
+                margin-top: 12%;
+            }
+        }
+}
+    // ________menu2+logo____________________________
+footer{
+            background-color: #000000;
+            color: #fefefe;
+        
+        .menu2_logo{
+        
+        position: relative;}
+
+        .menu2_dropdown ul{
+            padding: 2%  ;
+            color:rgb(255, 255, 255) ;
+            display: flex;
+            padding-left: 63%;
+            width: 40%;
+                li {
+                padding-right: 5%;
+                margin-right: 2%;
+                    }
+                a{ 
+                color: rgb(255, 255, 255);
+                }
+        }
+
+        .logo2{
+                display: inline;
+                width:150px;
+                height:46px;
+                position: absolute;
+                top: 0%;
+                left:0px;    
+        }
+    .tr{
+        background-color: #fefefe;
+        height: 2px;
+        width: 90%;
+    }
+    .cordonne{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

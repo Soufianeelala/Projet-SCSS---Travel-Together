@@ -1,28 +1,30 @@
-@use "../abstract/mixins" as mn;
+// @use "../abstract/mixins" as mn;
 
-@use "../abstract/variable" as cr;
+// @use "../abstract/variable" as cr;
   
 
-.menu_dropdown ul{
- @include mn.menu(20px,black);
- 
-     li {
+.menu1_dropdown ul{
+    padding: 2%  ;
+    color:rgb(13, 13, 13) ;
+    display: flex;
+    padding-left: 63%;
+    width: 40%;
+        li {
         padding-right: 5%;
         margin-right: 2%;
-    }
-    a{ 
-        color: cr.$color;
-    }
-
+         }
+        a{ 
+        color: black;
+     }
 }
+
 .logo{
-   
-    display: inline;
-   
+        display: inline;
         width:150px;
-        height:66px;
+        height:46px;
         position: absolute;
-        top: 0;
-        left: 70px;
-        
-    }
+        top: 3%;
+        left: 180px;    
+        }
+
+

@@ -1,18 +1,256 @@
-/* Error: expected ";".
- *   ,
- * 1 | @use "../layout/main"
- *   |                      ^
- *   '
- *   assets\scss\layout\_main.scss 1:22  @use
- *   assets\scss\style.scss 4:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a   \2577 \a 1 \2502  @use "../layout/main"\d\a   \2502                       ^\a   \2575 \a   assets\\scss\\layout\\_main.scss 1:22  @use\a   assets\\scss\\style.scss 4:1          root stylesheet';
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/assets/font/Lato-Regular.ttf");
 }
+.menu1_dropdown ul {
+  padding: 2%;
+  color: rgb(13, 13, 13);
+  display: flex;
+  padding-left: 63%;
+  width: 40%;
+}
+.menu1_dropdown ul li {
+  padding-right: 5%;
+  margin-right: 2%;
+}
+.menu1_dropdown ul a {
+  color: black;
+}
+
+.logo {
+  display: inline;
+  width: 150px;
+  height: 46px;
+  position: absolute;
+  top: 3%;
+  left: 180px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  background-color: #fffcfc;
+}
+
+.article_1 {
+  background-color: rgb(244, 150, 116);
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 1%;
+  height: 350px;
+  display: flex;
+  border-radius: 15px;
+}
+.article_1 .lorem {
+  display: flex;
+  justify-content: space-evenly;
+}
+.article_1 .lorem h2 {
+  padding-top: 5%;
+  padding-left: 5%;
+  width: 46.52%;
+}
+.article_1 .lorem p {
+  color: rgb(246, 246, 246);
+  padding: 5%;
+  width: 66.52%;
+}
+.article_1 .h2_article_1 {
+  width: 75%;
+}
+.article_1 img {
+  object-fit: cover;
+  height: 340px;
+  margin-top: 25%;
+  margin-right: 105px;
+}
+.article_1 a {
+  padding-left: 5%;
+}
+
+.a_article_1 {
+  background-color: #fefefe;
+  color: rgb(0, 0, 0);
+  padding: 5px 9px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  transition: 0.25s ease;
+  display: block;
+  width: 20%;
+  margin-left: 5%;
+}
+
+.service {
+  text-align: center;
+  margin-top: 10%;
+  position: relative;
+}
+.service h2 {
+  margin: 5%;
+  position: absolute;
+  top: -40%;
+  left: 10%;
+  font-size: 28px;
+}
+
+.service_images {
+  display: flex;
+  justify-content: center;
+}
+.service_images p {
+  padding: 0%;
+}
+.service_images a {
+  color: black;
+}
+.service_images .service_image1 {
+  background-image: url(../img/homme-assis-batiment.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px black;
+}
+.service_images .service_image2 {
+  background-image: url(../img/passport.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 169px;
+  width: 500px;
+  margin-left: 3%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px black;
+}
+.service_images .service_image3 {
+  background-image: url(../img/montgolfiere.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 169px;
+  width: 500px;
+  margin: 3%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px black;
+}
+
+.features {
+  text-align: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.features h2 {
+  position: absolute;
+  top: -60%;
+  right: 16%;
+  font-size: 28px;
+}
+.features .parti_features {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5%;
+}
+.features .parti_features p {
+  font-size: x-small;
+  text-align: center;
+  margin-top: 5%;
+}
+.features .parti_features .badge {
+  width: 20%;
+}
+.features .parti_features .transpore {
+  width: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.features .parti_features .maison {
+  width: 20%;
+}
+
+.article_2 {
+  background-color: rgb(244, 150, 116);
+  margin-left: 19%;
+  margin-right: 12%;
+  margin-top: 0%;
+  height: 220px;
+  width: 60%;
+  display: flex;
+  border-radius: 15px;
+}
+.article_2 .lorem2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.article_2 .lorem2 h2 {
+  color: rgb(246, 246, 246);
+  padding-top: 8%;
+  padding-left: 4%;
+  width: 46.52%;
+}
+.article_2 .lorem2 p {
+  color: rgb(246, 246, 246);
+  padding-left: 4%;
+  width: 66.52%;
+}
+.article_2 .lorem2 .p_article_2 {
+  display: flex;
+}
+.article_2 .lorem2 .a_article_2 {
+  background-color: #fefefe;
+  color: rgb(0, 0, 0);
+  padding: 5px 9px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  transition: 0.25s ease;
+  display: block;
+  width: 19%;
+  height: 10%;
+  margin-right: 15%;
+  margin-top: 12%;
+}
+
+footer {
+  background-color: #000000;
+  color: #fefefe;
+}
+footer .menu2_logo {
+  position: relative;
+}
+footer .menu2_dropdown ul {
+  padding: 2%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding-left: 63%;
+  width: 40%;
+}
+footer .menu2_dropdown ul li {
+  padding-right: 5%;
+  margin-right: 2%;
+}
+footer .menu2_dropdown ul a {
+  color: rgb(255, 255, 255);
+}
+footer .logo2 {
+  display: inline;
+  width: 150px;
+  height: 46px;
+  position: absolute;
+  top: 0%;
+  left: 0px;
+}
+footer .tr {
+  background-color: #fefefe;
+  height: 2px;
+  width: 90%;
+}
+footer .cordonne {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */
