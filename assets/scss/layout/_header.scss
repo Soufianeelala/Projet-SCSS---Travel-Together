@@ -1,0 +1,28 @@
+@use "../abstract/mixins" as mn;
+
+@use "../abstract/variable" as cr;
+  
+
+.menu_dropdown ul{
+ @include mn.menu(20px,black);
+ 
+     li {
+        padding-right: 5%;
+        margin-right: 2%;
+    }
+    a{ 
+        color: cr.$color;
+    }
+
+}
+.logo{
+   
+    display: inline;
+   
+        width:150px;
+        height:66px;
+        position: absolute;
+        top: 0;
+        left: 70px;
+        
+    }
