@@ -4,18 +4,41 @@
 @media (max-width: 990px) {
 
     header{
-            width:50% ;  
+            width:50% ; 
+            position: relative; 
         
             .menu1_dropdown ul{
-                display: flex;
-                flex-direction: column;
-            }           
+                display: none;             
+                .fa-bars{
+                    display: block;
+                    margin-left: 1rem;
+            }   
+            .menu1_dropdown:hover ul{
+                display:block;
+                position: absolute;
+                top:2rem ;
+                left:0rem;
+                background-color: black;
+                color:white;
+            }
+        
+            ul li{
+                padding: 1rem;
+            }
+        
+            .right{
+                height: 400px;
+                width: 400px;
+                margin-top: 1rem;
+            }
+                
             .logo{
                 position: relative;
                 align-items: center;
+               
             }
         
-        }     
+        }  }   
 // la____partie______main______________________________     
     main{
             width: 100%;
@@ -23,6 +46,7 @@
             align-items: center;
             // la premiere____________________________________ partie
             .article_1{
+                margin-top: 55px;
                 .lorem{ 
                         p{  color: rgb(246, 246, 246);
                             padding: 5%;
@@ -36,9 +60,10 @@
                     margin-right: 0px;  
                 }
                 
-                a{ 
+                .a_article_1{ 
                     padding-left: 0%;
-                    font-size: xx-small;
+                    padding: 5px 8px; 
+                    font-size: 10px;
                     
                 } 
             } 
@@ -46,23 +71,28 @@
         .service{
             justify-content: center;
             text-align: center;
-            margin-top: 10%;
+            margin-top: 15%;
             position: relative;
             h2{
-                margin: 7%;           
-                 top: -14%;
-                 left: 35%;
+                margin: 0%;           
+                 top: -15%;
+                 left: 45%;
                 font-size: 28px;
             }
         }
         .service_images{
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             .service_image1 {
-                width:500px;
-                margin-left: 25px;
+                width:350px;
+            }
+            .service_image2 {
+                width:350px;
+                margin-top: 10px;
+            }
+            .service_image3 {
+                width:350px;
             }
         }
         }
@@ -71,40 +101,42 @@
                 h2{
                     top: -10%;
                     right: 44%;   
-                }
-        
+                }        
         }
-    
-    
-    
-    
-    
         //______________________ article2
         .article_2{ 
             margin-top: 0%;
             position: relative;
-            bottom:230px;
+            bottom:250px;
             left: 0;
             .lorem2{ 
                 height: 250px;
                 width: 100%;
                 margin-top: 145px;              
-                position: relative;
+                position: absolute;
             }
            }   
      
  // ________footer____________________________
      footer{ 
+        padding-top: 7rem;
         .menu2_dropdown ul{
-            display: flex;
-            flex-direction: column;
+           
             align-items: center;
         }           
-
+        .footer_tr{
+            margin-top:10% ;
+        }
         .cordonne{
-         display: flex;
-         flex-direction: column;
+        padding-top: 10%;
          align-items: center;
          }
     }    
+}
+
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 800px) */
+// la____partie______header
+@media (max-width: 800px) {
+
+
 }

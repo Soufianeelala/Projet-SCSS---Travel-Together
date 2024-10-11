@@ -22,6 +22,22 @@ header {
 .menu1_dropdown ul a {
   color: black;
 }
+.menu1_dropdown ul nav {
+  background-color: rgb(195, 110, 110);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.menu1_dropdown ul .fa-solid {
+  display: block;
+}
+.menu1_dropdown ul ul {
+  display: flex;
+}
+.menu1_dropdown ul ul li {
+  margin: 0 1rem;
+}
 
 .logo {
   display: inline;
@@ -52,6 +68,7 @@ main {
   height: 390px;
   display: flex;
   border-radius: 15px;
+  position: relative;
 }
 .article_1 .lorem {
   display: flex;
@@ -82,19 +99,17 @@ main {
   height: 340;
   clip-path: inset(0px 0px 60px 0px); /* Masque une partie de l'image */
 }
-.article_1 a {
-  padding-left: 5%;
-}
 
 .a_article_1 {
+  position: absolute;
   background-color: #fefefe;
   color: rgb(0, 0, 0);
   padding: 5px 9px;
   border: 1px solid #000000;
   border-radius: 3px;
   transition: 0.25s ease;
-  display: block;
-  width: 16%;
+  display: inline-block;
+  width: 12%;
   margin-left: 5%;
   cursor: pointer;
 }
@@ -231,11 +246,12 @@ main {
 }
 .article_2 .lorem2 {
   background-color: rgb(244, 150, 116);
-  height: 270px;
+  height: 200px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   position: absolute;
+  top: 18px;
 }
 .article_2 .lorem2 h2 {
   color: rgb(246, 246, 246);
@@ -354,12 +370,32 @@ footer .cordonne i {
 @media (max-width: 990px) {
   header {
     width: 50%;
+    position: relative;
   }
   header .menu1_dropdown ul {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
-  header .logo {
+  header .menu1_dropdown ul .fa-bars {
+    display: block;
+    margin-left: 1rem;
+  }
+  header .menu1_dropdown ul .menu1_dropdown:hover ul {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    background-color: black;
+    color: white;
+  }
+  header .menu1_dropdown ul ul li {
+    padding: 1rem;
+  }
+  header .menu1_dropdown ul .right {
+    height: 400px;
+    width: 400px;
+    margin-top: 1rem;
+  }
+  header .menu1_dropdown ul .logo {
     position: relative;
     align-items: center;
   }
@@ -367,6 +403,9 @@ footer .cordonne i {
     width: 100%;
     justify-content: center;
     align-items: center;
+  }
+  main .article_1 {
+    margin-top: 55px;
   }
   main .article_1 .lorem p {
     color: rgb(246, 246, 246);
@@ -379,31 +418,37 @@ footer .cordonne i {
     margin-top: 39%;
     margin-right: 0px;
   }
-  main .article_1 a {
+  main .article_1 .a_article_1 {
     padding-left: 0%;
-    font-size: xx-small;
+    padding: 5px 8px;
+    font-size: 10px;
   }
   main .service {
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15%;
     position: relative;
   }
   main .service h2 {
-    margin: 7%;
-    top: -14%;
-    left: 35%;
+    margin: 0%;
+    top: -15%;
+    left: 45%;
     font-size: 28px;
   }
   main .service_images {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   main .service_images .service_image1 {
-    width: 500px;
-    margin-left: 25px;
+    width: 350px;
+  }
+  main .service_images .service_image2 {
+    width: 350px;
+    margin-top: 10px;
+  }
+  main .service_images .service_image3 {
+    width: 350px;
   }
   .features h2 {
     top: -10%;
@@ -412,25 +457,29 @@ footer .cordonne i {
   .article_2 {
     margin-top: 0%;
     position: relative;
-    bottom: 230px;
+    bottom: 250px;
     left: 0;
   }
   .article_2 .lorem2 {
     height: 250px;
     width: 100%;
     margin-top: 145px;
-    position: relative;
+    position: absolute;
+  }
+  footer {
+    padding-top: 7rem;
   }
   footer .menu2_dropdown ul {
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
+  footer .footer_tr {
+    margin-top: 10%;
+  }
   footer .cordonne {
-    display: flex;
-    flex-direction: column;
+    padding-top: 10%;
     align-items: center;
   }
 }
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 800px) */
 
 /*# sourceMappingURL=style.css.map */

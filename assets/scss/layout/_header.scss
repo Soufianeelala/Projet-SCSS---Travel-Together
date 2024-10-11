@@ -19,7 +19,27 @@ header{
          }
         a{ 
         color: black;
-     }
+        }
+         nav{
+        background-color: rgb(195, 110, 110);
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        position:relative;
+         }
+    
+         .fa-solid{
+        display: block;
+        
+         }
+    
+        ul{
+        display:flex;
+        }
+    
+         ul li {
+        margin:0 1rem;
+        }
 }
 
 .logo{

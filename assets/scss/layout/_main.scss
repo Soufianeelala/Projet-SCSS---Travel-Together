@@ -10,6 +10,7 @@ main{
     height: 390px;
     display: flex;
     border-radius: 15px;
+    position: relative;
    
     .lorem{ 
         display: flex;
@@ -40,21 +41,21 @@ main{
         height: 340;
         clip-path: inset(0px 0px 60px 0px); /* Masque une partie de l'image */
     }
-    a{ 
-        padding-left: 5%;
-    }              
+                
 }
 .a_article_1 {
+    position: absolute;
     background-color: #fefefe;
     color: rgb(0, 0, 0);
     padding: 5px 9px;
     border: 1px solid #000000;
     border-radius: 3px;
     transition: 0.25s ease;
-    display: block;
-    width: 16%;
+    display: inline-block;
+    width: 12%;
     margin-left: 5%;
     cursor: pointer;
+   
 }
 .a_article_1:hover {
     transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
@@ -199,11 +200,12 @@ main{
     .lorem2{ 
         
         background-color: rgb(244, 150, 116);
-        height: 270px;
+        height: 200px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         position: absolute;
+        top:18px;
             h2{ color: rgb(246, 246, 246);
                 padding-top: 8%;
                 padding-left: 4%;
