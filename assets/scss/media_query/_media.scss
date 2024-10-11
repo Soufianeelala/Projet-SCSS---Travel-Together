@@ -1,0 +1,110 @@
+
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 900px) */
+// la____partie______header
+@media (max-width: 990px) {
+
+    header{
+            width:50% ;  
+        
+            .menu1_dropdown ul{
+                display: flex;
+                flex-direction: column;
+            }           
+            .logo{
+                position: relative;
+                align-items: center;
+            }
+        
+        }     
+// la____partie______main______________________________     
+    main{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            // la premiere____________________________________ partie
+            .article_1{
+                .lorem{ 
+                        p{  color: rgb(246, 246, 246);
+                            padding: 5%;
+                            width:66.52%;
+                            font-size: small;
+                        }
+                    }           
+                img{ 
+                    height:375px ;
+                    margin-top: 39%;
+                    margin-right: 0px;  
+                }
+                
+                a{ 
+                    padding-left: 0%;
+                    font-size: xx-small;
+                    
+                } 
+            } 
+        // la partie_________________________ service        }
+        .service{
+            justify-content: center;
+            text-align: center;
+            margin-top: 10%;
+            position: relative;
+            h2{
+                margin: 7%;           
+                 top: -14%;
+                 left: 35%;
+                font-size: 28px;
+            }
+        }
+        .service_images{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .service_image1 {
+                width:500px;
+                margin-left: 25px;
+            }
+        }
+        }
+        ////////////////parti_____ Features
+         .features{
+                h2{
+                    top: -10%;
+                    right: 44%;   
+                }
+        
+        }
+    
+    
+    
+    
+    
+        //______________________ article2
+        .article_2{ 
+            margin-top: 0%;
+            position: relative;
+            bottom:230px;
+            left: 0;
+            .lorem2{ 
+                height: 250px;
+                width: 100%;
+                margin-top: 145px;              
+                position: relative;
+            }
+           }   
+     
+ // ________footer____________________________
+     footer{ 
+        .menu2_dropdown ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }           
+
+        .cordonne{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         }
+    }    
+}

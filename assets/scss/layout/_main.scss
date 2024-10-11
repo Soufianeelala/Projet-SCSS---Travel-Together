@@ -60,6 +60,7 @@ main{
     transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
     background-color: #2980b9; /* Changement de couleur du fond */
 }
+// la partie_________________________ service
 .service{
     text-align: center;
     margin-top: 10%;
@@ -134,23 +135,29 @@ main{
 }
 ////////////////parti_____ Features
 .features{
+   
     text-align: center;
     justify-content: space-evenly;
     position: relative;
     margin-bottom: 15%;
-
+    i{
+        font-size: xx-large;
+    }
     h2{
         position: absolute;
-        top: -35%;
+        top: -25%;
         right: 16%;
         font-size: 28px;
+        margin-bottom: 35px;
     }
     .parti_features{
+        background-image: url(../img/wave.svg);
+        background-size: cover;
         display: flex;
         justify-content: center;
-       
         text-align: center;
         margin: 5%;
+        margin-top: 5%;
         p{
             font-size: small;
             text-align: center;
@@ -160,15 +167,18 @@ main{
         }
 
         .badge{
+            margin-top: 3%;
             width:20% ;
         }
         .transpore{
+            margin-top: 3%;
             width:20% ;
             height: 150px;
             margin-left:5% ;
             margin-right:5% ;
         }
         .maison{
+            margin-top: 3%;
             width:20% ;
         }
 
@@ -234,4 +244,4 @@ main{
             
         }
 }
-   
+ 
