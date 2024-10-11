@@ -1,0 +1,83 @@
+
+ // ________menu2+logo____________________________
+ footer{
+    background-color: #000000;
+    color: #fefefe;
+    height: 400px;
+    font-family: "Lato-Regular";
+   
+
+    .menu2_logo{
+        margin-top: 0%;
+        position: relative;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+
+    .menu2_dropdown ul{
+        margin-top: 3%;
+        padding: 2%  ;
+        color:rgb(255, 255, 255) ;
+        display: flex;
+        position: absolute;
+        left: 58%;
+        width: 25%;
+        li {
+            padding-right: 5%;
+            margin-right: 2%;
+            }
+        a{ 
+            color: rgb(255, 255, 255);
+            }
+}
+
+    .logo2{
+        display: inline;
+        width:150px;
+        height:46px;
+        position: absolute;
+        top: 109%;
+        left:70px;    
+}
+    .footer_tr{
+    border: none;
+    background-color: #fefefe;
+    height: 1px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-right: 850px;
+    margin-left: 50px;
+    margin-bottom: 00px;
+    }
+    .cordonne{
+    margin-top:8% ;
+    display: flex;
+    justify-content: space-around;
+   
+        h4{
+            display: block;
+            margin-top:35px ;
+        }
+        i{
+            width: 25px ;
+            height: 25px;
+            margin-top:35px ;
+        }
+        .adress{
+            display: block;
+            margin-top:35px ;
+        }
+        .numero{
+            display: block;
+            margin-top:35px ;
+
+        }
+        i {
+            font-size: 44px;
+            color: #f9dddd;
+        }
+    }
+    
+}

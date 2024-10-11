@@ -1,12 +1,13 @@
 main{
     background-color: #fffcfc;
+    font-family: "Lato-Regular";
 }
 .article_1{
     background-color: rgb(244, 150, 116);
     margin-left: 12%;
     margin-right: 12%;
     margin-top: 1%;
-    height: 350px;
+    height: 390px;
     display: flex;
     border-radius: 15px;
    
@@ -22,16 +23,22 @@ main{
             p{  color: rgb(246, 246, 246);
                 padding: 5%;
                 width:66.52%;
+                font-size: small;
             }
         }
     .h2_article_1{
                 width: 75%;
+                color: white;
     }
     img{ 
         object-fit: cover;
-        height:340px ;
+        height:375px ;
         margin-top: 25%;
         margin-right: 105px;  
+    }
+    .clipped-image {
+        height: 340;
+        clip-path: inset(0px 0px 60px 0px); /* Masque une partie de l'image */
     }
     a{ 
         padding-left: 5%;
@@ -45,8 +52,13 @@ main{
     border-radius: 3px;
     transition: 0.25s ease;
     display: block;
-    width: 20%;
+    width: 16%;
     margin-left: 5%;
+    cursor: pointer;
+}
+.a_article_1:hover {
+    transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
+    background-color: #2980b9; /* Changement de couleur du fond */
 }
 .service{
     text-align: center;
@@ -64,11 +76,26 @@ main{
     display: flex;
     justify-content: center;
 
-        p{ 
-            padding: 0%;
-        }
+       
+        .centered-text {
+            position: absolute; /* Positionnement par rapport au conteneur parent */
+            top: 50%;           /* Centrage vertical */
+            left: 50%;          /* Centrage horizontal */
+            transform: translate(-50%, -50%); /* Ajuste pour que le centre du texte soit au centre du conteneur */
+            color: white;       /* Couleur du texte, ajustez selon l'image */
+            font-size: 26px;    /* Taille du texte */
+            font-weight: bold;  /* Texte en gras pour plus de lisibilité */
+            text-align: center; /* Centrage du texte à l'intérieur du paragraphe */
+            background-color: rgba(0, 0, 0, 0.1); /* Fond semi-transparent pour plus de lisibilité */
+            padding: 5px 10px;  /* Ajoute du padding autour du texte */
+         }
+    
         a{ 
-            color: black;
+            color: rgb(255, 254, 254);
+        }
+        span{
+            display: block;
+            font-size: 10px;
         }
         .service_image1{
             background-image: url(../img/homme-assis-batiment.jpg);
@@ -78,6 +105,8 @@ main{
             width: 500px;
             border-radius: 15px;
             box-shadow: 2px 2px 2px 1px black;
+            position: relative;
+           
         }
         .service_image2{
             background-image: url(../img/passport.jpg);
@@ -88,6 +117,8 @@ main{
             margin-left:3% ;
             border-radius: 15px;
             box-shadow: 2px 2px 2px 1px black;
+            position: relative;
+           
         }
         .service_image3{
             background-image: url(../img/montgolfiere.jpg);
@@ -98,6 +129,7 @@ main{
             margin: 3%;
             border-radius: 15px;
             box-shadow: 2px 2px 2px 1px black;
+            position: relative;
         }
 }
 ////////////////parti_____ Features
@@ -105,10 +137,11 @@ main{
     text-align: center;
     justify-content: space-evenly;
     position: relative;
+    margin-bottom: 15%;
 
     h2{
         position: absolute;
-        top: -60%;
+        top: -35%;
         right: 16%;
         font-size: 28px;
     }
@@ -119,9 +152,10 @@ main{
         text-align: center;
         margin: 5%;
         p{
-            font-size: x-small;
+            font-size: small;
             text-align: center;
             margin-top: 5%;
+            color: grey;
            
         }
 
@@ -130,6 +164,7 @@ main{
         }
         .transpore{
             width:20% ;
+            height: 150px;
             margin-left:5% ;
             margin-right:5% ;
         }
@@ -141,18 +176,24 @@ main{
 }
 //______________________ article2
 .article_2{
-    background-color: rgb(244, 150, 116);
+    
     margin-left: 19%;
     margin-right: 12%;
     margin-top: 0%;
-    height: 220px;
-    width: 60%;
     display: flex;
     border-radius: 15px;
+    position: relative;
+    bottom:170px;
+    
    
     .lorem2{ 
+        
+        background-color: rgb(244, 150, 116);
+        height: 270px;
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
+        position: absolute;
             h2{ color: rgb(246, 246, 246);
                 padding-top: 8%;
                 padding-left: 4%;
@@ -171,7 +212,7 @@ main{
             .a_article_2 {
                 background-color: #fefefe;
                 color: rgb(0, 0, 0);
-                padding: 5px 9px;
+                padding: 5px 5px;
                 border: 1px solid #000000;
                 border-radius: 3px;
                 transition: 0.25s ease;
@@ -180,49 +221,17 @@ main{
                 height: 10%;
                 margin-right: 15%;
                 margin-top: 12%;
+                cursor: pointer;
+                        span{
+                            color: rgb(255, 254, 254);
+                            font-size: xx-large;
+                        }
             }
+            .a_article_2:hover {
+                transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
+                background-color: #2980b9; /* Changement de couleur du fond */
+            }
+            
         }
 }
-    // ________menu2+logo____________________________
-footer{
-            background-color: #000000;
-            color: #fefefe;
-        
-        .menu2_logo{
-        
-        position: relative;}
-
-        .menu2_dropdown ul{
-            padding: 2%  ;
-            color:rgb(255, 255, 255) ;
-            display: flex;
-            padding-left: 63%;
-            width: 40%;
-                li {
-                padding-right: 5%;
-                margin-right: 2%;
-                    }
-                a{ 
-                color: rgb(255, 255, 255);
-                }
-        }
-
-        .logo2{
-                display: inline;
-                width:150px;
-                height:46px;
-                position: absolute;
-                top: 0%;
-                left:0px;    
-        }
-    .tr{
-        background-color: #fefefe;
-        height: 2px;
-        width: 90%;
-    }
-    .cordonne{
-        display: flex;
-        justify-content: space-around;
-    }
-
-}
+   

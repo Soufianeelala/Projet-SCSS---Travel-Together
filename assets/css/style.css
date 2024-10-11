@@ -1,12 +1,18 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Lato-Regular";
   src: url("/assets/font/Lato-Regular.ttf");
 }
+header {
+  width: 100%;
+  font-family: "Lato-Regular";
+}
+
 .menu1_dropdown ul {
   padding: 2%;
   color: rgb(13, 13, 13);
   display: flex;
-  padding-left: 63%;
+  padding-left: 59%;
   width: 40%;
 }
 .menu1_dropdown ul li {
@@ -23,9 +29,10 @@
   height: 46px;
   position: absolute;
   top: 3%;
-  left: 180px;
+  left: 160px;
 }
 
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 900px) */
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +42,7 @@
 
 main {
   background-color: #fffcfc;
+  font-family: "Lato-Regular";
 }
 
 .article_1 {
@@ -42,7 +50,7 @@ main {
   margin-left: 12%;
   margin-right: 12%;
   margin-top: 1%;
-  height: 350px;
+  height: 390px;
   display: flex;
   border-radius: 15px;
 }
@@ -59,15 +67,21 @@ main {
   color: rgb(246, 246, 246);
   padding: 5%;
   width: 66.52%;
+  font-size: small;
 }
 .article_1 .h2_article_1 {
   width: 75%;
+  color: white;
 }
 .article_1 img {
   object-fit: cover;
-  height: 340px;
+  height: 375px;
   margin-top: 25%;
   margin-right: 105px;
+}
+.article_1 .clipped-image {
+  height: 340;
+  clip-path: inset(0px 0px 60px 0px); /* Masque une partie de l'image */
 }
 .article_1 a {
   padding-left: 5%;
@@ -81,8 +95,14 @@ main {
   border-radius: 3px;
   transition: 0.25s ease;
   display: block;
-  width: 20%;
+  width: 16%;
   margin-left: 5%;
+  cursor: pointer;
+}
+
+.a_article_1:hover {
+  transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
+  background-color: #2980b9; /* Changement de couleur du fond */
 }
 
 .service {
@@ -102,11 +122,24 @@ main {
   display: flex;
   justify-content: center;
 }
-.service_images p {
-  padding: 0%;
+.service_images .centered-text {
+  position: absolute; /* Positionnement par rapport au conteneur parent */
+  top: 50%; /* Centrage vertical */
+  left: 50%; /* Centrage horizontal */
+  transform: translate(-50%, -50%); /* Ajuste pour que le centre du texte soit au centre du conteneur */
+  color: white; /* Couleur du texte, ajustez selon l'image */
+  font-size: 26px; /* Taille du texte */
+  font-weight: bold; /* Texte en gras pour plus de lisibilité */
+  text-align: center; /* Centrage du texte à l'intérieur du paragraphe */
+  background-color: rgba(0, 0, 0, 0.1); /* Fond semi-transparent pour plus de lisibilité */
+  padding: 5px 10px; /* Ajoute du padding autour du texte */
 }
 .service_images a {
-  color: black;
+  color: rgb(255, 254, 254);
+}
+.service_images span {
+  display: block;
+  font-size: 10px;
 }
 .service_images .service_image1 {
   background-image: url(../img/homme-assis-batiment.jpg);
@@ -116,6 +149,7 @@ main {
   width: 500px;
   border-radius: 15px;
   box-shadow: 2px 2px 2px 1px black;
+  position: relative;
 }
 .service_images .service_image2 {
   background-image: url(../img/passport.jpg);
@@ -126,6 +160,7 @@ main {
   margin-left: 3%;
   border-radius: 15px;
   box-shadow: 2px 2px 2px 1px black;
+  position: relative;
 }
 .service_images .service_image3 {
   background-image: url(../img/montgolfiere.jpg);
@@ -136,16 +171,18 @@ main {
   margin: 3%;
   border-radius: 15px;
   box-shadow: 2px 2px 2px 1px black;
+  position: relative;
 }
 
 .features {
   text-align: center;
   justify-content: space-evenly;
   position: relative;
+  margin-bottom: 15%;
 }
 .features h2 {
   position: absolute;
-  top: -60%;
+  top: -35%;
   right: 16%;
   font-size: 28px;
 }
@@ -156,15 +193,17 @@ main {
   margin: 5%;
 }
 .features .parti_features p {
-  font-size: x-small;
+  font-size: small;
   text-align: center;
   margin-top: 5%;
+  color: grey;
 }
 .features .parti_features .badge {
   width: 20%;
 }
 .features .parti_features .transpore {
   width: 20%;
+  height: 150px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -173,18 +212,21 @@ main {
 }
 
 .article_2 {
-  background-color: rgb(244, 150, 116);
   margin-left: 19%;
   margin-right: 12%;
   margin-top: 0%;
-  height: 220px;
-  width: 60%;
   display: flex;
   border-radius: 15px;
+  position: relative;
+  bottom: 170px;
 }
 .article_2 .lorem2 {
+  background-color: rgb(244, 150, 116);
+  height: 270px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  position: absolute;
 }
 .article_2 .lorem2 h2 {
   color: rgb(246, 246, 246);
@@ -203,7 +245,7 @@ main {
 .article_2 .lorem2 .a_article_2 {
   background-color: #fefefe;
   color: rgb(0, 0, 0);
-  padding: 5px 9px;
+  padding: 5px 5px;
   border: 1px solid #000000;
   border-radius: 3px;
   transition: 0.25s ease;
@@ -212,21 +254,37 @@ main {
   height: 10%;
   margin-right: 15%;
   margin-top: 12%;
+  cursor: pointer;
+}
+.article_2 .lorem2 .a_article_2 span {
+  color: rgb(255, 254, 254);
+  font-size: xx-large;
+}
+.article_2 .lorem2 .a_article_2:hover {
+  transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
+  background-color: #2980b9; /* Changement de couleur du fond */
 }
 
 footer {
   background-color: #000000;
   color: #fefefe;
+  height: 400px;
+  font-family: "Lato-Regular";
 }
 footer .menu2_logo {
+  margin-top: 0%;
   position: relative;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 footer .menu2_dropdown ul {
+  margin-top: 3%;
   padding: 2%;
   color: rgb(255, 255, 255);
   display: flex;
-  padding-left: 63%;
-  width: 40%;
+  position: absolute;
+  left: 58%;
+  width: 25%;
 }
 footer .menu2_dropdown ul li {
   padding-right: 5%;
@@ -240,17 +298,46 @@ footer .logo2 {
   width: 150px;
   height: 46px;
   position: absolute;
-  top: 0%;
-  left: 0px;
+  top: 109%;
+  left: 70px;
 }
-footer .tr {
+footer .footer_tr {
+  border: none;
   background-color: #fefefe;
-  height: 2px;
-  width: 90%;
+  height: 1px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-right: 850px;
+  margin-left: 50px;
+  margin-bottom: 0px;
 }
 footer .cordonne {
+  margin-top: 8%;
   display: flex;
   justify-content: space-around;
+}
+footer .cordonne h4 {
+  display: block;
+  margin-top: 35px;
+}
+footer .cordonne i {
+  width: 25px;
+  height: 25px;
+  margin-top: 35px;
+}
+footer .cordonne .adress {
+  display: block;
+  margin-top: 35px;
+}
+footer .cordonne .numero {
+  display: block;
+  margin-top: 35px;
+}
+footer .cordonne i {
+  font-size: 44px;
+  color: #f9dddd;
 }
 
 /*# sourceMappingURL=style.css.map */
