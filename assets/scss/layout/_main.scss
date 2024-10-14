@@ -108,10 +108,11 @@ main{
                 background-size: cover;
                 background-position: center;    
                 height: 532px;
-                width: 750px;
+                width: 500px;
                 border-radius: 15px;
                 box-shadow: 2px 2px 2px 1px black;
                 position: relative;
+                
             
             }
             .service_image2{
@@ -119,11 +120,11 @@ main{
                 background-size: cover;
                 background-position: center;    
                 height: 259px;
-                width: 750px;
-                margin-left:3% ;
+                width: 500px; 
                 border-radius: 15px;
                 box-shadow: 2px 2px 2px 1px black;
                 position: relative;
+                margin: 13px;
             
             }
             .service_image3{
@@ -131,7 +132,7 @@ main{
                 background-size: cover;
                 background-position: center;    
                 height: 259px;
-                width: 750px;
+                width: 500px;
                 margin: 3%;
                 border-radius: 15px;
                 box-shadow: 2px 2px 2px 1px black;
@@ -204,13 +205,13 @@ main{
             font-family: "Lato-Regular";
 
             background-color: #E7816B;
-            height: 250px;
+            height: 220px;
             width: 100%;
             display: flex;
             justify-content: space-evenly;
             position: absolute;
             font-size: 20px;
-            top:48px;
+            top:-19px;
             border-radius: 10px;
                 h2{ color: rgb(246, 246, 246);
                     padding-top: 4%;

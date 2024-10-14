@@ -7,14 +7,14 @@ header {
   width: 100%;
   font-family: "Lato-Regular";
   font-size: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 header .menu1_dropdown ul {
   font-family: "Lato-Regular";
   padding: 2%;
   color: rgb(13, 13, 13);
   display: flex;
-  padding-left: 63%;
-  width: 40%;
 }
 header .menu1_dropdown ul li {
   padding-right: 5%;
@@ -25,19 +25,16 @@ header .menu1_dropdown ul nav {
   height: 3rem;
   display: flex;
   align-items: center;
-  position: relative;
 }
 header .menu1_dropdown ul nav a {
   color: black;
   padding: 12px;
 }
 header .logo {
-  display: inline;
+  display: inline-block;
   width: 180px;
   height: 55px;
-  position: absolute;
   top: 3%;
-  left: 250px;
 }
 header .fa-bars {
   display: none;
@@ -152,7 +149,7 @@ main .service_images .service_image1 {
   background-size: cover;
   background-position: center;
   height: 532px;
-  width: 750px;
+  width: 500px;
   border-radius: 15px;
   box-shadow: 2px 2px 2px 1px black;
   position: relative;
@@ -162,18 +159,18 @@ main .service_images .service_image2 {
   background-size: cover;
   background-position: center;
   height: 259px;
-  width: 750px;
-  margin-left: 3%;
+  width: 500px;
   border-radius: 15px;
   box-shadow: 2px 2px 2px 1px black;
   position: relative;
+  margin: 13px;
 }
 main .service_images .service_image3 {
   background-image: url(../img/montgolfiere.jpg);
   background-size: cover;
   background-position: center;
   height: 259px;
-  width: 750px;
+  width: 500px;
   margin: 3%;
   border-radius: 15px;
   box-shadow: 2px 2px 2px 1px black;
@@ -237,13 +234,13 @@ main .article_2 {
 main .article_2 .lorem2 {
   font-family: "Lato-Regular";
   background-color: #E7816B;
-  height: 250px;
+  height: 220px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   position: absolute;
   font-size: 20px;
-  top: 48px;
+  top: -19px;
   border-radius: 10px;
 }
 main .article_2 .lorem2 h2 {
@@ -288,90 +285,114 @@ main .article_2 .lorem2 .a_article_2:hover {
 footer {
   background-color: #000000;
   color: #fefefe;
-  height: 450px;
+  height: auto;
   font-family: "Lato-Regular";
+  text-align: center;
 }
 footer .menu2_logo {
-  margin-top: 0%;
-  position: relative;
-  padding-top: 5%;
-  padding-bottom: 3%;
-}
-footer .menu2_dropdown ul {
-  margin-top: 3%;
-  padding: 2%;
-  color: rgb(255, 255, 255);
-  display: flex;
-  position: absolute;
-  left: 65%;
-  width: 28%;
-  font-size: 20px;
-}
-footer .menu2_dropdown ul li {
-  padding-right: 5%;
-  margin-right: 2%;
-}
-footer .menu2_dropdown ul a {
-  color: rgb(255, 255, 255);
-}
-footer .logo2 {
-  display: inline;
-  width: 179px;
-  height: 59px;
-  position: absolute;
-  top: 109%;
-  left: 200px;
-}
-footer .footer_tr {
-  border: none;
-  background-color: #fefefe;
-  height: 1px;
-  width: 76%;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 220px;
-  margin-bottom: 0px;
-}
-footer .cordonne {
-  margin-top: 8%;
   display: flex;
   justify-content: space-around;
 }
-footer .cordonne h4 {
-  display: block;
-  margin-top: 35px;
+footer nav div ul {
+  margin-top: 65px;
+  padding: 2%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  width: 28%;
+  font-size: 20px;
 }
-footer .cordonne i {
+footer nav div ul li {
+  padding-right: 5%;
+  margin-right: 2%;
+}
+footer nav div ul a {
+  color: rgb(255, 255, 255);
+}
+footer .logo2 {
+  display: block;
+  width: 179px;
+  height: 59px;
+  margin-top: 65px;
+}
+footer .footer_cordonne .footer_tr {
+  border: none;
+  background-color: #fefefe;
+  height: 1px;
+  width: 80%;
+  margin: 10%;
+}
+footer .footer_cordonne .cordonne {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer_cordonne .cordonne h4 {
+  display: block;
+  margin-top: 25px;
+}
+footer .footer_cordonne .cordonne i {
   width: 35px;
   height: 15px;
   margin-top: 45px;
   padding: 1px;
 }
-footer .cordonne .adress {
+footer .footer_cordonne .cordonne .adress {
   display: block;
   margin-top: 5px;
 }
-footer .cordonne .numero {
+footer .footer_cordonne .cordonne .numero {
   display: block;
   margin-top: 5px;
 }
-footer .cordonne i {
+footer .footer_cordonne .cordonne i {
   font-size: 24px;
   color: #f6f6f6;
 }
 
-/* reponsive ________Tablettes et petits ordinateurs (max-width: 1070px) */
-/* reponsive ________Tablettes et petits ordinateurs (max-width: 900px) */
-@media (max-width: 990px) {
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 1239px) */
+@media (max-width: 1233px) {
+  main .article_2 {
+    margin-top: 1%;
+  }
+  main .article_2 .lorem2 {
+    height: 215px;
+  }
+  main .article_2 .lorem2 .p_lorem_2 {
+    padding-left: 0%;
+  }
+  main .article_2 .lorem2 .p_article_2 {
+    width: 100%;
+  }
+  main .article_2 .lorem2 .a_article_2 {
+    padding: 5px 5px;
+    display: block;
+    width: 25%;
+    height: 10%;
+  }
+}
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 1239px) */
+@media (max-width: 1080px) {
+  main .service {
+    justify-content: center;
+    text-align: center;
+    margin-top: 15%;
+    position: relative;
+  }
+  main .service h2 {
+    margin: 0%;
+    top: -25%;
+    left: 45%;
+    font-size: 38px;
+  }
+}
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 999px) */
+@media (max-width: 1002px) {
   header {
-    width: 80%;
+    width: 100%;
   }
   header .fa-bars {
     display: block;
     margin-left: 1rem;
-    position: absolute;
-    right: 150px;
     top: 15px;
     border: 2px solid gray;
     width: 25px;
@@ -383,7 +404,6 @@ footer .cordonne i {
     display: none;
   }
   header .logo {
-    position: relative;
     align-items: center;
     top: 10px;
     left: 140px;
@@ -396,19 +416,8 @@ footer .cordonne i {
   main .article_1 {
     margin-top: 55px;
   }
-  main .article_1 .lorem p {
-    color: rgb(246, 246, 246);
-    padding: 5%;
-    width: 66.52%;
-    font-size: small;
-  }
-  main .article_1 img {
-    height: 305px;
-    margin-top: 29%;
-    margin-right: 70px;
-  }
-  main .article_1 .clipped-image {
-    clip-path: inset(0px 0px 0px 0px); /* Masque une partie de l'image */
+  main .article_1 .lorem h2 {
+    width: 80%;
   }
   main .service {
     justify-content: center;
@@ -450,7 +459,7 @@ footer .cordonne i {
     left: 0;
   }
   .article_2 .lorem2 {
-    margin-top: 65px;
+    margin-top: 55px;
     position: absolute;
   }
   .article_2 .lorem2 .p_lorem_2 {
@@ -463,7 +472,7 @@ footer .cordonne i {
   .article_2 .lorem2 .a_article_2 {
     padding: 15px 15px;
     display: block;
-    width: 170%;
+    width: 25%;
     height: 10%;
     margin-right: 15%;
     margin-top: 12%;
@@ -472,28 +481,129 @@ footer .cordonne i {
     padding-top: 7rem;
   }
   footer .menu2_dropdown ul {
-    margin-top: 3%;
-    padding: 1%;
-    position: absolute;
-    left: 58%;
+    margin-left: 590px;
+    position: relative;
     width: 25%;
+    top: -55px;
   }
   footer .menu2_dropdown ul li {
     padding-right: 3%;
     margin-right: 2%;
   }
   footer .footer_tr {
-    margin-top: 10%;
     width: 80%;
     justify-content: center;
     left: 10%;
   }
   footer .cordonne {
-    padding-top: 10%;
+    padding-top: 0%;
     align-items: center;
   }
 }
-/* reponsive ________Tablettes et petits ordinateurs (max-width: 800px) */
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 900px) */
+@media (max-width: 910px) {
+  main {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  main .article_1 {
+    margin-top: 55px;
+  }
+  main .article_1 .lorem p {
+    padding: 5%;
+    width: 66.52%;
+    font-size: x-small;
+  }
+  main .article_1 h2 {
+    padding-top: 5%;
+    padding-left: 3%;
+    width: 100%;
+  }
+  main .article_1 p {
+    color: rgb(246, 246, 246);
+    padding: 3%;
+    width: 100%;
+    font-size: 15px;
+  }
+  main .h2_article_1 {
+    width: 1000%;
+    color: white;
+  }
+  main .h2_article_1 img {
+    height: 305px;
+    margin-top: 29%;
+    margin-right: 70px;
+  }
+  main .h2_article_1 h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  main .article_2 .lorem2 .p_article_2 {
+    height: auto;
+    width: 100%;
+  }
+  main .article_2 .lorem2 .a_article_2 {
+    padding: 3px 3px;
+    display: block;
+    width: 40%;
+    height: 10%;
+    margin-right: 15%;
+    margin-top: 12%;
+  }
+  .menu2_logo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu2_logo nav div ul {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .menu2_logo .logo2 {
+    display: block;
+  }
+}
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 850px) */
+@media (max-width: 850px) {
+  main .article_2 {
+    display: flex;
+    position: relative;
+    text-align: center;
+    height: auto;
+    margin-top: 230px;
+  }
+  main .article_2 .lorem2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 15px;
+    top: -58px;
+  }
+  main .article_2 .lorem2 h2 {
+    width: 100%;
+    justify-content: center;
+  }
+  main .article_2 .lorem2 .p_lorem_2 {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+  }
+  main .article_2 .lorem2 .p_article_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .article_2 .lorem2 .a_article_2 {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+}
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 750px) */
 @media (max-width: 750px) {
   main .service_images .service_image1 {
     width: 300px;
@@ -507,24 +617,21 @@ footer .cordonne i {
   }
 }
 /* reponsive ________Mobile  (max-width: 650px) */
-@media (max-width: 650px) {
+@media (max-width: 720px) {
   header {
-    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   header .fa-bars {
     display: block;
-    position: absolute;
-    top: 70px;
-    right: 50%;
+    margin-top: 10px;
   }
   header .menu1_dropdown ul {
     display: none;
   }
   header .logo {
-    position: relative;
-    align-items: center;
-    top: 10px;
-    left: 230px;
+    margin-top: 10px;
   }
   main {
     width: 100%;
@@ -532,22 +639,23 @@ footer .cordonne i {
     align-items: center;
   }
   main .article_1 {
-    margin-top: 80px;
+    margin-top: 30px;
     justify-content: center;
   }
   main .article_1 .lorem p {
     font-size: 15px;
+    width: 100%;
   }
   main .article_1 .lorem h2 {
     padding-top: 5%;
     padding-left: 3%;
-    width: 66.52%;
+    width: 90.52%;
     font-size: 25px;
   }
-  main .article_1 .lorem p {
+  main .article_1 .lorem .p_article_1 {
     color: rgb(246, 246, 246);
     padding: 3%;
-    width: 66.52%;
+    width: 100%;
     font-size: 15px;
   }
   main .article_1 .h2_article_1 {
@@ -576,7 +684,7 @@ footer .cordonne i {
   main .features .parti_features {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: auto;
     text-align: center;
     margin: 5%;
     margin-top: 5%;
@@ -627,17 +735,12 @@ footer .cordonne i {
     height: 300px;
   }
   main .article_2 {
-    margin-top: 0%;
     display: flex;
-    border-radius: 15px;
     position: relative;
-    bottom: 170px;
     text-align: center;
+    height: auto;
   }
   main .article_2 .lorem2 {
-    font-family: "Lato-Regular";
-    background-color: #E7816B;
-    height: 250px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -646,15 +749,15 @@ footer .cordonne i {
     top: -58px;
   }
   main .article_2 .lorem2 h2 {
-    color: rgb(246, 246, 246);
     padding-top: 4%;
     padding-left: 0%;
-    width: 46.52%;
+    width: 100%;
     justify-content: center;
   }
   main .article_2 .lorem2 .p_lorem_2 {
     width: 100%;
-    font-size: 15px;
+    height: auto;
+    font-size: 10px;
     justify-content: center;
   }
   main .article_2 .lorem2 .p_article_2 {
@@ -671,36 +774,34 @@ footer .cordonne i {
     font-size: 15px;
   }
   footer {
-    background-color: #000000;
-    color: #fefefe;
-    height: 450px;
-    font-family: "Lato-Regular";
+    height: auto;
   }
-  footer .menu2_logo {
-    margin-top: 0%;
-    position: relative;
-    padding-top: 5%;
-    padding-bottom: 3%;
-  }
-  footer .menu2_dropdown ul {
-    padding: 2%;
-    color: rgb(255, 255, 255);
+  footer .footer_cordonne {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 40%;
-    top: 25px;
-    width: 28%;
+  }
+  footer .footer_cordonne .menu2_logo {
+    margin-top: 45px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_cordonne .menu2_dropdown ul {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    width: 18%;
     font-size: 20px;
   }
-  footer .menu2_dropdown ul li {
+  footer .footer_cordonne .menu2_dropdown ul li {
     padding-right: 5%;
     margin-right: 2%;
   }
-  footer .menu2_dropdown ul a {
+  footer .footer_cordonne .menu2_dropdown ul a {
     color: rgb(255, 255, 255);
   }
-  footer .logo2 {
+  footer .footer_cordonne .logo2 {
     display: block;
     width: 149px;
     height: 53px;
@@ -709,36 +810,67 @@ footer .cordonne i {
     left: 150px;
     margin-top: 1%;
   }
-  footer .footer_tr {
+  footer .footer_cordonne .footer_tr {
     width: 80%;
-    position: absolute;
     height: 0.5px;
     left: 50px;
-    bottom: -1960px;
+    bottom: -10px;
   }
-  footer .cordonne {
+  footer .footer_cordonne .cordonne {
     margin-top: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  footer .cordonne h4 {
+  footer .footer_cordonne .cordonne h4 {
     display: block;
     margin-top: 37px;
   }
-  footer .cordonne i {
+  footer .footer_cordonne .cordonne i {
     width: 35px;
     height: 5px;
     margin-top: 15px;
     padding: 1px;
   }
-  footer .cordonne .adress {
+  footer .footer_cordonne .cordonne .adress {
     display: block;
     margin-top: 0px;
   }
-  footer .cordonne .numero {
+  footer .footer_cordonne .cordonne .numero {
     display: block;
     margin-top: 0px;
+  }
+}
+/* reponsive ________Mobile  (max-width: 550px) */
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  main .service {
+    justify-content: center;
+    text-align: center;
+    margin-top: 15%;
+    position: relative;
+  }
+  main .service_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .service_images .service_image1 {
+    width: 350px;
+  }
+  main .service_images .service_image2 {
+    width: 350px;
+    margin-top: 10px;
+  }
+  main .service_images .service_image3 {
+    width: 350px;
+  }
+  .article_2 .lorem2 .p_article_2 {
+    margin-top: 5px;
   }
 }
 

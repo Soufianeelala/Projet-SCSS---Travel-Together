@@ -3,24 +3,21 @@
  footer{
     background-color: #000000;
     color: #fefefe;
-    height: 450px;
+    height: auto;
     font-family: "Lato-Regular";
+    text-align: center;
    
 
     .menu2_logo{
-        margin-top: 0%;
-        position: relative;
-        padding-top: 5%;
-        padding-bottom: 3%;
+        display: flex;
+        justify-content:space-around;
     }
 
-    .menu2_dropdown ul{
-        margin-top: 3%;
+    nav div ul{
+        margin-top: 65px;
         padding: 2%  ;
         color:rgb(255, 255, 255) ;
         display: flex;
-        position: absolute;
-        left: 65%;
         width: 28%;
         font-size: 20px;
         li {
@@ -33,54 +30,49 @@
     }
 
     .logo2{
-        display: inline;
+        display: block;
         width:179px;
         height:59px;
-        position: absolute;
-        top: 109%;
-        left:200px;    
+        margin-top: 65px;
 }
-    .footer_tr{
-    border: none;
-    background-color: #fefefe;
-    height: 1px;
-    width: 76%;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-   
-    left: 220px;
-    margin-bottom: 00px;
-    }
-    .cordonne{
-    margin-top:8% ;
-    display: flex;
-    justify-content: space-around;
-   
-        h4{
-            display: block;
-            margin-top:35px ;
+    .footer_cordonne{
+      
+        .footer_tr{
+        border: none;
+        background-color: #fefefe;
+        height: 1px;
+        width: 80%;
+        margin: 10%;
         }
-        i{
-            width: 35px ;
-            height: 15px;
-            margin-top:45px ;
-            padding:1px ;
-        }
-        .adress{
-            display: block;
-            margin-top:5px ;
-        }
-        .numero{
-            display: block;
-            margin-top:5px ;
-            
-
-        }
-        i {
-            font-size: 24px;
-            color: #f6f6f6;
-        }
-    }
+        .cordonne{
+        margin-top:5% ;
+        display: flex;
+        justify-content: space-around;
     
+            h4{
+                display: block;
+                margin-top:25px ;
+            }
+            i{
+                width: 35px ;
+                height: 15px;
+                margin-top:45px ;
+                padding:1px ;
+            }
+            .adress{
+                display: block;
+                margin-top:5px ;
+            }
+            .numero{
+                display: block;
+                margin-top:5px ;
+                
+
+            }
+            i {
+                font-size: 24px;
+                color: #f6f6f6;
+            }
+        }
+    }
 }
