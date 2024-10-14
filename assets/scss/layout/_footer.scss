@@ -3,7 +3,7 @@
  footer{
     background-color: #000000;
     color: #fefefe;
-    height: 400px;
+    height: 450px;
     font-family: "Lato-Regular";
    
 
@@ -20,8 +20,9 @@
         color:rgb(255, 255, 255) ;
         display: flex;
         position: absolute;
-        left: 58%;
-        width: 25%;
+        left: 65%;
+        width: 28%;
+        font-size: 20px;
         li {
             padding-right: 5%;
             margin-right: 2%;
@@ -29,26 +30,26 @@
         a{ 
             color: rgb(255, 255, 255);
             }
-}
+    }
 
     .logo2{
         display: inline;
-        width:150px;
-        height:46px;
+        width:179px;
+        height:59px;
         position: absolute;
         top: 109%;
-        left:70px;    
+        left:200px;    
 }
     .footer_tr{
     border: none;
     background-color: #fefefe;
     height: 1px;
-    width: 100%;
+    width: 76%;
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-right: 850px;
-    margin-left: 50px;
+   
+    left: 220px;
     margin-bottom: 00px;
     }
     .cordonne{
@@ -73,11 +74,12 @@
         .numero{
             display: block;
             margin-top:5px ;
+            
 
         }
         i {
             font-size: 24px;
-            color: #f9dddd;
+            color: #f6f6f6;
         }
     }
     

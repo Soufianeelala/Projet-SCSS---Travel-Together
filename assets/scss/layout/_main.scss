@@ -1,249 +1,257 @@
 main{
     background-color: #fffcfc;
     font-family: "Lato-Regular";
-}
-.article_1{
-    background-color: rgb(244, 150, 116);
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-top: 1%;
-    height: 390px;
-    display: flex;
-    border-radius: 15px;
-    position: relative;
-   
-    .lorem{ 
-        display: flex;
-        justify-content: space-evenly;
-            h2{
-                padding-top: 5%;
-                padding-left: 5%;
-                width:46.52%;
-                
-            }
-            p{  color: rgb(246, 246, 246);
-                padding: 5%;
-                width:66.52%;
-                font-size: small;
-            }
-        }
-    .h2_article_1{
-                width: 75%;
-                color: white;
-    }
-    img{ 
-        object-fit: cover;
-        height:375px ;
-        margin-top: 25%;
-        margin-right: 105px;  
-    }
-    .clipped-image {
-        height: 340;
-        clip-path: inset(0px 0px 60px 0px); /* Masque une partie de l'image */
-    }
-                
-}
-.a_article_1 {
-    position: absolute;
-    background-color: #fefefe;
-    color: rgb(0, 0, 0);
-    padding: 5px 9px;
-    border: 1px solid #000000;
-    border-radius: 3px;
-    transition: 0.25s ease;
-    display: inline-block;
-    width: 12%;
-    margin-left: 5%;
-    cursor: pointer;
-   
-}
-.a_article_1:hover {
-    transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
-    background-color: #2980b9; /* Changement de couleur du fond */
-}
-// la partie_________________________ service
-.service{
-    text-align: center;
-    margin-top: 10%;
-    position: relative;
-    h2{
-        margin: 5%;
-        position: absolute;
-      top: -40%;
-     left: 10%;
-     font-size: 28px;
-    }
-}
-.service_images{
-    display: flex;
-    justify-content: center;
+    font-size: 25px;
 
-       
-        .centered-text {
-            position: absolute; /* Positionnement par rapport au conteneur parent */
-            top: 50%;           /* Centrage vertical */
-            left: 50%;          /* Centrage horizontal */
-            transform: translate(-50%, -50%); /* Ajuste pour que le centre du texte soit au centre du conteneur */
-            color: white;       /* Couleur du texte, ajustez selon l'image */
-            font-size: 26px;    /* Taille du texte */
-            font-weight: bold;  /* Texte en gras pour plus de lisibilité */
-            text-align: center; /* Centrage du texte à l'intérieur du paragraphe */
-            background-color: rgba(0, 0, 0, 0.1); /* Fond semi-transparent pour plus de lisibilité */
-            padding: 5px 10px;  /* Ajoute du padding autour du texte */
-         }
+
+    .article_1{
+        background-color: #E7816B;
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-top: 1%;
+        height: 390px;
+        display: flex;
+        border-radius: 20px;
+        position: relative;
     
-        a{ 
-            color: rgb(255, 254, 254);
+        .lorem{ 
+            display: flex;
+            justify-content: space-evenly;
+                h2{
+                    padding-top: 5%;
+                    padding-left: 3%;
+                    width:46.52%;
+                    
+                }
+                p{  color: rgb(246, 246, 246);
+                    padding: 3%;
+                    width:66.52%;
+                    font-size: 15px;
+                }
+            }
+        .h2_article_1{
+                    width: 75%;
+                    color: white;
         }
-        span{
-            display: block;
-            font-size: 10px;
+        img{ 
+            object-fit: cover;
+            height:375px ;
+            margin-top: 25%;
+            margin-right: 105px;  
         }
-        .service_image1{
-            background-image: url(../img/homme-assis-batiment.jpg);
-            background-size: cover;
-            background-position: center;    
-            height: 350px;
-            width: 500px;
-            border-radius: 15px;
-            box-shadow: 2px 2px 2px 1px black;
-            position: relative;
-           
+        .clipped-image {
+            height: 340;
+            clip-path: inset(0px 0px 60px 0px); /* Masque une partie de l'image */
         }
-        .service_image2{
-            background-image: url(../img/passport.jpg);
-            background-size: cover;
-            background-position: center;    
-            height: 169px;
-            width: 500px;
-            margin-left:3% ;
-            border-radius: 15px;
-            box-shadow: 2px 2px 2px 1px black;
-            position: relative;
-           
-        }
-        .service_image3{
-            background-image: url(../img/montgolfiere.jpg);
-            background-size: cover;
-            background-position: center;    
-            height: 169px;
-            width: 500px;
-            margin: 3%;
-            border-radius: 15px;
-            box-shadow: 2px 2px 2px 1px black;
-            position: relative;
-        }
-}
-////////////////parti_____ Features
-.features{
-   
-    text-align: center;
-    justify-content: space-evenly;
-    position: relative;
-    margin-bottom: 15%;
-    i{
-        font-size: xx-large;
+                    
     }
-    h2{
-        position: absolute;
-        top: -25%;
-        right: 16%;
-        font-size: 28px;
-        margin-bottom: 35px;
+    .a_article_1 {
+        position: relative;
+        background-color: #fefefe;
+        color: rgb(0, 0, 0);
+        padding: 3px 3px;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        transition: 0.25s ease;
+        display: inline-block;
+        width: 150px;
+        margin-left: 3%;
+        cursor: pointer;
+        font-size: 18px;
+
+    
     }
-    .parti_features{
-        background-image: url(../img/wave.svg);
-        background-size: cover;
+    .a_article_1:hover {
+        transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
+        background-color: #2980b9; /* Changement de couleur du fond */
+    }
+    // la partie_________________________ service
+    .service{
+        text-align: center;
+        margin-top: 10%;
+        position: relative;
+        h2{
+            margin: 5%;
+            position: absolute;
+        top: -30%;
+        left: 8%;
+        font-size: 48px;
+        }
+    }
+    .service_images{
         display: flex;
         justify-content: center;
-        text-align: center;
-        margin: 5%;
-        margin-top: 5%;
-        p{
-            font-size: small;
-            text-align: center;
-            margin-top: 5%;
-            color: grey;
-           
-        }
 
-        .badge{
-            margin-top: 3%;
-            width:20% ;
-        }
-        .transpore{
-            margin-top: 3%;
-            width:20% ;
-            height: 150px;
-            margin-left:5% ;
-            margin-right:5% ;
-        }
-        .maison{
-            margin-top: 3%;
-            width:20% ;
-        }
-
-    }
-}
-//______________________ article2
-.article_2{
-    
-    margin-left: 19%;
-    margin-right: 12%;
-    margin-top: 0%;
-    display: flex;
-    border-radius: 15px;
-    position: relative;
-    bottom:170px;
-    
-   
-    .lorem2{ 
         
-        background-color: rgb(244, 150, 116);
-        height: 200px;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        position: absolute;
-        top:18px;
-            h2{ color: rgb(246, 246, 246);
-                padding-top: 8%;
-                padding-left: 4%;
-                width:46.52%;
-                
+            .centered-text {
+                position: absolute; /* Positionnement par rapport au conteneur parent */
+                top: 50%;           /* Centrage vertical */
+                left: 50%;          /* Centrage horizontal */
+                transform: translate(-50%, -50%); /* Ajuste pour que le centre du texte soit au centre du conteneur */
+                color: white;       /* Couleur du texte, ajustez selon l'image */
+                font-size: 26px;    /* Taille du texte */
+                font-weight: bold;  /* Texte en gras pour plus de lisibilité */
+                text-align: center; /* Centrage du texte à l'intérieur du paragraphe */
+                background-color: rgba(0, 0, 0, 0.1); /* Fond semi-transparent pour plus de lisibilité */
+                padding: 5px 10px;  /* Ajoute du padding autour du texte */
             }
-            p{  color: rgb(246, 246, 246);
-                padding-left: 4%;
-                width:66.52%;
-                
-            
+        
+            a{ 
+                color: rgb(255, 254, 254);
             }
-            .p_article_2{
-                display: flex;
-            }
-            .a_article_2 {
-                background-color: #fefefe;
-                color: rgb(0, 0, 0);
-                padding: 5px 5px;
-                border: 1px solid #000000;
-                border-radius: 3px;
-                transition: 0.25s ease;
+            span{
                 display: block;
-                width: 19%;
-                height: 10%;
-                margin-right: 15%;
-                margin-top: 12%;
-                cursor: pointer;
-                        span{
-                            color: rgb(255, 254, 254);
-                            font-size: xx-large;
-                        }
+                font-size: 10px;
             }
-            .a_article_2:hover {
-                transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
-                background-color: #2980b9; /* Changement de couleur du fond */
-            }
+            .service_image1{
+                background-image: url(../img/homme-assis-batiment.jpg);
+                background-size: cover;
+                background-position: center;    
+                height: 532px;
+                width: 750px;
+                border-radius: 15px;
+                box-shadow: 2px 2px 2px 1px black;
+                position: relative;
             
+            }
+            .service_image2{
+                background-image: url(../img/passport.jpg);
+                background-size: cover;
+                background-position: center;    
+                height: 259px;
+                width: 750px;
+                margin-left:3% ;
+                border-radius: 15px;
+                box-shadow: 2px 2px 2px 1px black;
+                position: relative;
+            
+            }
+            .service_image3{
+                background-image: url(../img/montgolfiere.jpg);
+                background-size: cover;
+                background-position: center;    
+                height: 259px;
+                width: 750px;
+                margin: 3%;
+                border-radius: 15px;
+                box-shadow: 2px 2px 2px 1px black;
+                position: relative;
+            }
+    }
+    ////////////////parti_____ Features
+    .features{
+    
+        text-align: center;
+        justify-content: space-evenly;
+        position: relative;
+        margin-bottom: 15%;
+        i{
+            font-size: xx-large;
         }
-}
- 
+        h2{
+            position: absolute;
+            top: -25%;
+            right: 12%;
+            font-size: 48px;            margin-bottom: 35px;
+        }
+        .parti_features{
+            background-image: url(../img/wave.svg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 5%;
+            margin-top: 5%;
+            p{
+                font-size: 17px;
+                text-align: center;
+                margin-top: 5%;
+                color: grey;
+            
+            }
+
+            .badge{
+                margin-top: 3%;
+                width:20% ;
+            }
+            .transpore{
+                margin-top: 3%;
+                width:20% ;
+                height: 150px;
+                margin-left:5% ;
+                margin-right:5% ;
+            }
+            .maison{
+                margin-top: 3%;
+                width:20% ;
+            }
+
+        }
+    }
+    //______________________ article2
+    .article_2{
+        
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0%;
+        display: flex;
+        border-radius: 15px;
+        position: relative;
+        bottom:170px;
+        
+    
+        .lorem2{ 
+            font-family: "Lato-Regular";
+
+            background-color: #E7816B;
+            height: 250px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            position: absolute;
+            font-size: 20px;
+            top:48px;
+            border-radius: 10px;
+                h2{ color: rgb(246, 246, 246);
+                    padding-top: 4%;
+                    padding-left: 0%;
+                    width:46.52%;
+                    
+                }
+                
+                .p_lorem_2{  color: rgb(246, 246, 246);
+                    width:90%; 
+                }
+                .p_article_2{
+                    display: flex;
+                }
+                .a_article_2 {
+                    background-color: #fefefe;
+                    color: rgb(0, 0, 0);
+                    padding: 5px 5px;
+                    border: 1px solid #000000;
+                    border-radius: 3px;
+                    transition: 0.25s ease;
+                    display: block;
+                    width: 170px;
+                    height: 10%;
+                    margin-right: 15%;
+                    margin-top: 12%;
+                    cursor: pointer;
+                            span{
+                                color: rgb(248, 0, 0);
+                                font-size: x-large;
+                            }
+                            p{
+                                font-size: small;
+                            }
+                }
+
+                .a_article_2:hover {
+                    transform: translate(10px, 10px); /* Translation de 10px à droite et vers le bas */
+                    background-color: #2980b9; /* Changement de couleur du fond */
+                }
+                
+            }
+    }
+}  

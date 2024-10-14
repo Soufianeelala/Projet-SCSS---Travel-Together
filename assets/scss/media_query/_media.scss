@@ -1,45 +1,99 @@
+/* reponsive ________Tablettes et petits ordinateurs (max-width: 1070px) */
+// la____partie______header
+// @media (max-width: 1090px) {
+//     header{
+//         width:100% ;
+//         font-family: "Lato-Regular";
+//         font-size: 20px;
+//         .menu1_dropdown ul{
+//             font-family: "Lato-Regular";
+//             padding: 2%  ;
+//             color:rgb(13, 13, 13) ;
+//             display: flex;
+//             padding-left: 63%;
+//             width: 220%;  
+//             li {
+//                 padding-right: 5%;
+//                 margin-right: 2%;
+                
+//             }  
+//             nav{
+//                 background-color: rgb(195, 110, 110);
+//                 height: 3rem;
+//                 display: flex;
+//                 align-items: center;
+//                 position:relative;       
+//                     a{ 
+                    
+//                     }          
+//                 }
+               
+//         }    
+//     }
+//         .logo{
+//             display: inline;
+//             width:180px;
+//             height:55px;
+//             position: absolute;
+//             top: 3%;
+//             left: 250px;    
+//         }
+   
+   
+   
+//     main{
+//         .service_images{
+//             .service_image1 {
+//                 width: 400px;
+                
+//             }
+//             .service_image2 {
+//                 width:400px;
+                
+//             }
+//             .service_image3 {
+//                 width:400px;
+            
+//             }
+//            }  
+//         }
+// }
+
 
 /* reponsive ________Tablettes et petits ordinateurs (max-width: 900px) */
 // la____partie______header
 @media (max-width: 990px) {
 
     header{
-            width:50% ; 
-            position: relative; 
-        
-            .menu1_dropdown ul{
-                display: none;             
-                .fa-bars{
-                    display: block;
-                    margin-left: 1rem;
+            width:80% ; 
+
+            .fa-bars {
+                display: block;
+                margin-left: 1rem; 
+                position:absolute;  
+                right:  150px;
+                top:15px;
+                border: 2px solid gray;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                padding-top: 1%;
+
             }   
-            .menu1_dropdown:hover ul{
-                display:block;
-                position: absolute;
-                top:2rem ;
-                left:0rem;
-                background-color: black;
-                color:white;
-            }
-        
-            ul li{
-                padding: 1rem;
-            }
-        
-            .right{
-                height: 400px;
-                width: 400px;
-                margin-top: 1rem;
-            }
-                
+
+            .menu1_dropdown ul{
+                display: none;                     
+            }   
+            
+           
             .logo{
                 position: relative;
-                align-items: center;
-               
-            }
-        
-        }  }   
-// la____partie______main______________________________     
+                align-items: center;  
+                top:10px ;
+                left: 140px;        
+            } 
+        }     
+    // la____partie______main______________________________     
     main{
             width: 100%;
             justify-content: center;
@@ -55,19 +109,15 @@
                         }
                     }           
                 img{ 
-                    height:375px ;
-                    margin-top: 39%;
-                    margin-right: 0px;  
+                    height:305px ;
+                    margin-top: 29%;
+                    margin-right: 70px;  
                 }
-                
-                .a_article_1{ 
-                    padding-left: 0%;
-                    padding: 5px 8px; 
-                    font-size: 10px;
-                    
-                } 
+                .clipped-image {
+                    clip-path: inset(0px 0px 00px 0px); /* Masque une partie de l'image */
+                }     
             } 
-        // la partie_________________________ service        }
+    // la partie_________________________ service        }
         .service{
             justify-content: center;
             text-align: center;
@@ -81,62 +131,392 @@
             }
         }
         .service_images{
+            
             display: flex;
             justify-content: center;
             align-items: center;
             .service_image1 {
-                width:350px;
+                width: 350px;
+                
             }
             .service_image2 {
-                width:350px;
+                width: 350px;
                 margin-top: 10px;
+                
             }
             .service_image3 {
-                width:350px;
+                width: 350px;
+               
             }
         }
         }
         ////////////////parti_____ Features
          .features{
                 h2{
-                    top: -10%;
-                    right: 44%;   
+                    margin-top: 4%;
+                    top: 0;
+                    left: 17%;
+                   font-size: 28px;
                 }        
         }
         //______________________ article2
+        
         .article_2{ 
-            margin-top: 0%;
+            margin-top: 1%;
             position: relative;
-            bottom:250px;
+            bottom:50px;
             left: 0;
-            .lorem2{ 
-                height: 250px;
-                width: 100%;
-                margin-top: 145px;              
-                position: absolute;
+            .lorem2{               
+                margin-top: 65px;              
+                position: absolute;         
+                .p_lorem_2{ 
+                    padding-left: 0%;
+                    width:32%;
+                }
+                .p_article_2{ 
+                    width: 100%;
+                }
+                .a_article_2 {   
+                    padding: 15px 15px;
+                    display: block;
+                    width: 170%;
+                    height: 10%;
+                    margin-right: 15%;
+                    margin-top: 12%;
+                }
             }
-           }   
+    }   
      
  // ________footer____________________________
-     footer{ 
+    footer{ 
         padding-top: 7rem;
         .menu2_dropdown ul{
-           
-            align-items: center;
-        }           
+            margin-top: 3%;
+            padding: 1%  ;
+            position: absolute;
+            left: 58%;
+            width: 25%;
+            li {
+                padding-right: 3%;
+                margin-right: 2%;
+                }  
+        }         
         .footer_tr{
             margin-top:10% ;
+            width: 80%;
+            justify-content: center;
+            left: 10%;
         }
         .cordonne{
         padding-top: 10%;
          align-items: center;
          }
     }    
-}
 
+}
 /* reponsive ________Tablettes et petits ordinateurs (max-width: 800px) */
 // la____partie______header
-@media (max-width: 800px) {
+@media (max-width: 750px) {
+     // la partie_________________________ service        }
+     main{
+        .service_images{
+            .service_image1 {
+                width: 300px;
+                
+            }
+            .service_image2 {
+                width: 300px;
+                margin-top: 10px;
+                
+            }
+            .service_image3 {
+                width: 300px;
+            
+            }
+        }
+             
+    }
+}
+/* reponsive ________Mobile  (max-width: 650px) */
+// la____partie______header
+@media (max-width: 650px) {
+
+    // h__e__a__d__e__r
+    header{
+        width:80% ; 
+
+        .fa-bars {
+            
+                display: block;
+                position: absolute;  
+                top: 70px;
+                right: 50%;   
+        }   
+
+        .menu1_dropdown ul{
+            display: none;                     
+        }   
+        .logo{
+            position: relative;
+            align-items: center;  
+            top:10px ;
+            left: 230px;        
+        } 
+    }
+   
+
+    // partie ________________main_____________
+    main{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        // la premiere____________________________________ partie
+        .article_1{
+            margin-top: 80px;
+            justify-content: center;
+            .lorem{ 
+                    p{  
+                       font-size: 15px;
+                    }
+                    h2{
+                        padding-top: 5%;
+                        padding-left: 3%;
+                        width:66.52%;
+                        font-size: 25px ;
+                            
+                    }
+                    p{  
+                        color: rgb(246, 246, 246);
+                        padding: 3%;
+                        width:66.52%;
+                        font-size: 15px;
+                    }
+                }
+            .h2_article_1{
+                    width: 75%;
+                    color: white;
+                }
+           img{ 
+                height:0px ;  
+            }
+        }
+
+         ////////////////parti_____ Features
+    .features{
+    
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 45%;
+        margin-top: 75px;
+        i{
+            font-size: xx-large;
+        }
+        h2{
+            position: absolute;
+            top: -15%;
+            right:0%;
+            font-size: 48px;           
+        }
+        .parti_features{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 5%;
+            margin-top: 5%;
+            p{
+                font-size: 17px;
+                text-align: center;
+                margin-top: 5%;
+                color: grey;
+            
+            }
+
+            .badge{
+                margin-top: 3%;
+                width:80% ;
+                height: 30%;
+
+            }
+            .transpore{
+                margin-top: 3%;
+                width:80% ;
+                height: 150px;
+                margin-left:0% ;
+                margin-right:0% ;
+                height: 30%;
+
+            }
+            .maison{
+                margin-top: 3%;
+                width:80% ;
+                height: 30%;
+            }
+
+        }
+    }
 
 
+    // la partie_________________________ service        }
+        .service h2{
+           margin-top: 80px;
+        }
+        .service_images{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .service_image1 {
+                width: 450px;
+                height: 300px;      
+                
+            }
+            .service_image2 {
+                width: 450px; 
+                margin-top: 10px;
+                height: 300px;      
+
+            }
+            .service_image3 {
+                width: 450px; 
+                height: 300px;      
+            }  
+             }
+
+            //  article__________2//////////////////////////
+             .article_2{
+        
+              
+                margin-top: 0%;
+                display: flex;
+                border-radius: 15px;
+                position: relative;
+                bottom:170px;
+              text-align: center;
+                
+            
+                .lorem2{ 
+                    font-family: "Lato-Regular";
+        
+                    background-color: #E7816B;
+                    height: 250px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    font-size: 15px;
+                    top:-58px;
+                   
+                        h2{ color: rgb(246, 246, 246);
+                            padding-top: 4%;
+                            padding-left: 0%;
+                            width:46.52%;
+                            justify-content: center;
+                            
+                        }
+                        
+                        .p_lorem_2{ 
+                            width:100%; 
+                            font-size: 15px;
+                           justify-content: center;
+                        }
+                        .p_article_2{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                        .a_article_2 {
+                            background-color: #fefefe;
+                            text-align: center;  
+                            margin-left: 5%; 
+                                    p{
+                                        font-size:15px;
+                                    }
+                        }
+                        
+                    }
+            }
+    }
+
+
+// ________menu2+logo____________________________
+
+ // ________menu2+logo____________________________
+ footer{
+    background-color: #000000;
+    color: #fefefe;
+    height: 450px;
+    font-family: "Lato-Regular";
+    .menu2_logo{
+        margin-top: 0%;
+        position: relative;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+
+    .menu2_dropdown ul{
+        
+        padding: 2%  ;
+        color:rgb(255, 255, 255) ;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 40%;
+        top:25px;
+        width: 28%;
+        font-size: 20px;
+        li {
+            padding-right: 5%;
+            margin-right: 2%;
+            }
+        a{ 
+            color: rgb(255, 255, 255);
+            }
+    }
+
+    .logo2{
+        display: block;
+        width:149px;
+        height:53px;
+        position: absolute;
+        top: -50%;
+        left:150px; 
+        margin-top: 1%;   
+}
+    .footer_tr{
+    width: 80%;
+    position: absolute;
+    height: 0.5px;
+    left: 50px;
+    bottom:-1960px;
+    }
+    .cordonne{
+    margin-top:8% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        h4{
+            display: block;
+            margin-top:37px ;
+        }
+        i{
+            width: 35px ;
+            height: 5px;
+            margin-top:15px ;
+            padding:1px ;
+        }
+        .adress{
+            display: block;
+            margin-top:0px ;
+        }
+        .numero{
+            display: block;
+            margin-top:0px ;
+        }
+        
+        
+    }
+    
+}
 }
